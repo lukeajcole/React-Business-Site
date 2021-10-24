@@ -1,24 +1,21 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+const Projects = (props) => {
+    
+    const [detailsModel, setDetailsModal] = useState({
       deps: {},
       detailsModalShow: false,
-    };
-  }
+    });
 
-  render() {
     let detailsModalShow = (data) => {
-      this.setState({ detailsModalShow: true, deps: data });
+      setDetailsModal({ detailsModalShow: true, deps: data });
     };
 
-    let detailsModalClose = () => this.setState({ detailsModalShow: false });
-    if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projects = this.props.resumeProjects.map(function (projects) {
+    let detailsModalClose = () => setDetailsModal({ detailsModalShow: false });
+    if (props.resumeProjects && props.resumeBasicInfo) {
+      var sectionName = props.resumeBasicInfo.section_name.projects;
+      var projects = props.resumeProjects.map(function (projects) {
         return (
           <div
             className="col-sm-12 col-md-6 col-lg-4"
@@ -57,14 +54,13 @@ class Projects extends Component {
             <div className="row mx-auto">{projects}</div>
           </div>
           <ProjectDetailsModal
-            show={this.state.detailsModalShow}
+            show={detailsModel.detailsModalShow}
             onHide={detailsModalClose}
-            data={this.state.deps}
+            data={detailsModel.deps}
           />
         </div>
       </section>
     );
   }
-}
 
 export default Projects;

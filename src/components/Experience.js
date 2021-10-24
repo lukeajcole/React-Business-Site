@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -6,11 +6,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 
-class Experience extends Component {
-  render() {
-    if (this.props.resumeExperience && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.experience;
-      var work = this.props.resumeExperience.map(function (work, i) {
+const Experience = (props) => {
+    if (props.resumeExperience && props.resumeBasicInfo) {
+      var sectionName = props.resumeBasicInfo.section_name.experience;
+      var work = props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
@@ -91,6 +90,5 @@ class Experience extends Component {
       </section>
     );
   }
-}
 
 export default Experience;

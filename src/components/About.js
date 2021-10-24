@@ -1,18 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import mongoIcon from "@iconify/icons-logos/mongodb";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import nodeIcon from "@iconify/icons-logos/nodejs";
+import mernIcon from "@iconify/icons-logos/mern";
+import sequelizeIcon from "@iconify/icons-logos/sequelize";
 
-class About extends Component {
-  render() {
-    if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+const About = (props) =>{
+    if (props.sharedBasicInfo) {
+      var profilepic = "images/" + props.sharedBasicInfo.image;
     }
-    if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+    if (props.resumeBasicInfo) {
+      var sectionName = props.resumeBasicInfo.section_name.about;
+      var hello = props.resumeBasicInfo.description_header;
+      var about = props.resumeBasicInfo.description;
     }
 
     return (
@@ -26,12 +27,12 @@ class About extends Component {
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
+                    // height="250px"
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={mongoIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
@@ -39,7 +40,15 @@ class About extends Component {
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={nodeIcon}
+                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                  />
+                  <Icon 
+                    icon={sequelizeIcon}
+                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                  />
+                  <Icon 
+                    icon={mernIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
@@ -90,6 +99,5 @@ class About extends Component {
       </section>
     );
   }
-}
 
 export default About;

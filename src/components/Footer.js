@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Footer extends Component {
-  render() {
-    if (this.props.sharedBasicInfo) {
-      var networks = this.props.sharedBasicInfo.social.map(function (network) {
+const Footer = (props) => {
+    if (props.sharedBasicInfo) {
+      var networks = props.sharedBasicInfo.social.map(function (network) {
         return (
           <span key={network.name} className="m-4">
             <a href={network.url} target="_blank" rel="noopener noreferrer">
@@ -23,8 +22,8 @@ class Footer extends Component {
             <div className="container">
               <small>
                 Copyright &copy;{" "}
-                {this.props.sharedBasicInfo
-                  ? this.props.sharedBasicInfo.name
+                {props.sharedBasicInfo
+                  ? props.sharedBasicInfo.name
                   : "???"}
               </small>
             </div>
@@ -33,6 +32,5 @@ class Footer extends Component {
       </footer>
     );
   }
-}
 
 export default Footer;

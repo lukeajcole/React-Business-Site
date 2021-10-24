@@ -1,37 +1,32 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 
-class Header extends Component {
-  titles = [];
+const Header = (props) => {
+  let titles = [];
 
-  constructor() {
-    super();
-    this.state = { checked: false };
-    this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
+    const [toggle, setToggle] = useState(false);
+    // onThemeSwitchChange = onThemeSwitchChange.bind(this);
+
+  const  onThemeSwitchChange = () => {
+    setToggle(!toggle);
+    setTheme();
   }
 
-  onThemeSwitchChange(checked) {
-    this.setState({ checked });
-    this.setTheme();
-  }
-
-  setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+  const setTheme = () => {
+    const dataThemeAttribute = "data-theme";
+    const body = document.body;
+    const newTheme = body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
   }
 
-  render() {
-    if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+    if (props.sharedData) {
+      var name = props.sharedData.name;
+      titles = props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
     const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
+      return <Typical className="title-styles" steps={titles} loop={50} />
     }, (props, prevProp) => true);
 
     return (
@@ -48,8 +43,9 @@ class Header extends Component {
                 <HeaderTitleTypeAnimation />
               </div>
               <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
+                // checked={`checked:${toggle}`}
+                checked={toggle}
+                onChange={onThemeSwitchChange}
                 offColor="#baaa80"
                 onColor="#353535"
                 className="react-switch mx-auto"
@@ -93,6 +89,5 @@ class Header extends Component {
       </header>
     );
   }
-}
 
 export default Header;
