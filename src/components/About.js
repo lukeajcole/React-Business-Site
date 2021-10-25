@@ -95,7 +95,7 @@ const About = (props) =>{
               </div>
             </div>
           </div>
-          <button type="button" ref={props.sharedBasicInfo.calendly} class="btn btn-primary btn-lg">Large button</button>
+          <button type="button" href={props.sharedBasicInfo.calendly} className="btn btn-primary btn-lg">Large button</button>
         </div>
       </section>
     );
