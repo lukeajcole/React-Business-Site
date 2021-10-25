@@ -95,7 +95,9 @@ const About = (props) =>{
               </div>
             </div>
           </div>
-          <button type="button" href={props.sharedBasicInfo.calendly} className="btn btn-primary btn-lg">Large button</button>
+          <div class="d-grid gap-2 col-1 mx-auto">
+            
+          </div>
         </div>
       </section>
     );

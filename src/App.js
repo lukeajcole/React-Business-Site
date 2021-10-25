@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import shared_Data from "./data/common_data.json";
 import resume_Data from "./data/resume.json"
+import Contact from "./components/Contact"
 
 function App(){
 
@@ -26,6 +27,7 @@ function App(){
           resumeBasicInfo={resumeData.basic_info}
           sharedBasicInfo={sharedData.basic_info}
         />
+        <Contact  sharedBasicInfo={sharedData.basic_info} />
         <Projects
           resumeProjects={resumeData.projects}
           resumeBasicInfo={resumeData.basic_info}
