@@ -2,6 +2,7 @@
     "basic_info": {
       "name": "Luke Cole",
       "titles": [ "Full-Stack Developer", "Manufacturing Engineer", "MES Systems Analyst" ],
+      "calendly": "https://calendly.com/lukeajcole",
       "social": [
         {
           "name": "github",
