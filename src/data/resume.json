@@ -13,67 +13,81 @@
       {
         "title": "Alottarhythms",
         "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "description": "A-LOTTA-RHYTHMS is an online social platform where music enthusiasts can connect with each other and create music together. It is the first real full-stack application that I worked on with a team from the full-stack UCSD bootcamp",
         "images": [
-          "images/portfolio/projects/alottarhythms.png"
+          "images/portfolio/projects/alottarhythms.png", "images/portfolio/projects/alottarhythms2.png" 
         ],
-        "url": "",
+        "url": "https://sheltered-garden-76553.herokuapp.com/",
         "technologies": [
           {
-            "class": "devicon-react-plain",
-            "name": "React"
+            "class": "devicon-nodejs-plain",
+            "name": "Node"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-express-original",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-tailwindcss-plain",
+            "name": "Tailwind"
           }
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
+        "title": "Workout Tracker",
+        "startDate": "2020",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/projects/workout.png"
         ],
-        "url": "https://github.com",
+        "url": "https://frozen-chamber-84417.herokuapp.com/",
         "technologies": [
+          {
+            "class": "devicon-mongodb-plain",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Customizable Business Site",
+        "startDate": "2020",
+        "description": "One of the things I got tired of pretty quickly is updating my portfolio page, so I told myself that as soon as I had all the tools under my belt, I'd set up a plug-n-play site that would have an admin page to set all of the site information. I'm calling it a business site instead of a portfolio, because I want to include features for client interaction.",
+        "images": [
+          "images/portfolio/projects/comingsoon.png"
+        ],
+        "url": "https://github.com/lukeajcole/React-Business-Site",
+        "technologies": [
+          {
+            "class": "devicon-mongodb-plain",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original",
+            "name": "Express"
+          },
           {
             "class": "devicon-react-original",
             "name": "React"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-nodejs-plain",
+            "name": "Node"
           }
         ]
       }
