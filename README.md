@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ## Description
 
-The [Budget Tracker App](https://frozen-chamber-84417.herokuapp.com/) allows you to track your income and expenses with a simple UI and a easy to understand chart. The app also functions offline and will load any offline transactions into the backend MongoDb when it comes back online. 
+The [Site Builder](https://still-caverns-89239.herokuapp.com/) is a work in progress, but eventually it will be a full-stack react application that allows for dynamic, code-free editing of the profile-page information. The appearance and UX will improve over-time as I expand my front-end skills. Also, I will be adding in "client-facing" features such as event viewing, meeting requests, and invoicing so that the site can be something that a contractor or consultant can use to coordinate their business.
 
 ## <ins>Table of Contents</ins>
 - [Installation](#installation)
@@ -14,33 +14,25 @@ The [Budget Tracker App](https://frozen-chamber-84417.herokuapp.com/) allows you
 
 ## <ins>Installation</ins>
 
-In order to run this site locally, you will need to have MongoDB installed and running. 
-
-Be sure to run the following command in a terminal that's opened in the same directory as server.js:
+Be sure to run the following command in a terminal that's opened in the same directory as package.json:
  ```md
  npm install
  ```
-Finally, you can run the following code to run the backend and see it in action in an app like insomnia
+Finally, you can run the following code to see it in action at http://localhost:3000/
 
  ```md
-node server.js
+npm start
  ```
 
 
 ## <ins>Usage</ins>
 
-Below is a screen shot showing how it looks
 
-![Home](images/screenshot.JPG)
-
-
-Here is a [DEMO OF THE SITE](https://frozen-chamber-84417.herokuapp.com/) that is hosted by heroku. 
+Here is a [DEMO OF THE SITE](https://frozen-chamber-84417.herokuapp.com/) that has been formatting to double as my portfolio. 
 
 
 ## <ins>Questions</ins>
 Contact the creator of this site at lukeajcole@gmail.com. Github link: https://github.com/lukeajcole
-
-
 
 
 
