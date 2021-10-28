@@ -19,15 +19,12 @@ const About = (props) =>{
     return (
       <section id="about">
         <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
-            <span>{sectionName}</span>
-          </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
-              <div className="polaroid">
+              <div className="polaroid mx-auto d-block">
                 <span style={{ cursor: "auto" }}>
-                  <img
-                    // height="250px"
+                  <img className="mx-auto d-block rounded"
+                    height="auto"
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
@@ -57,28 +54,9 @@ const About = (props) =>{
 
             <div className="col-md-8 center">
               <div className="col-md-10">
-                <div className="card">
-                  <div className="card-header">
-                    <span
-                      className="iconify"
-                      data-icon="emojione:red-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:yellow-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:green-circle"
-                      data-inline="false"
-                    ></span>
-                  </div>
+                <div className="card border-0 p-3">
                   <div
-                    className="card-body font-trebuchet text-justify ml-3 mr-3"
+                    className="card-body font-trebuchet text-justify m-3 border-0 shadow-lg rounded p-3"
                     style={{
                       height: "auto",
                       fontSize: "132%",
@@ -86,7 +64,7 @@ const About = (props) =>{
                     }}
                   >
                     <br />
-                    <span className="wave">{hello} :) </span>
+                    <span className="wave p-3">{hello}...</span>
                     <br />
                     <br />
                     {about}

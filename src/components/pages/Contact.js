@@ -3,7 +3,6 @@ import { Form, Button } from 'react-bootstrap';
 
 const Contact = (props) => {
     if (props.sharedBasicInfo) {
-      var sectionName = "Contact Me"
       var networks = props.sharedBasicInfo.social.map(function (network) {
         return (
           <span key={network.name} className="m-4">
@@ -18,9 +17,6 @@ const Contact = (props) => {
     return (
       <section id="contact">
         <div class="d-grid gap-2 col-4 mx-auto">
-          <h1 className="text-center" style={{ color: "black" }}>
-            <span>{sectionName}</span>
-          </h1>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>

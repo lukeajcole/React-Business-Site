@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "description_header": "Hi",
+      "description_header": "Hello World",
       "description": "👋 I'm Luke Cole, an engineer, developer and professional tinkerer. Starting from a background in Biomedical Engineering, I set off into the professional world to find something exciting and rewarding. That path took with to a contract manufacturing company where the challenges are numerous and complex, just like I like them. To better equip myself for new challenges, I've made my way through a full-stack web development bootcamp.",
       "section_name": {
         "about": "About me",
@@ -42,9 +42,9 @@
         "startDate": "2020",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "images": [
-          "images/portfolio/projects/workout.png"
+          "images/portfolio/projects/exercise.jpg", "images/portfolio/projects/dashboard.jpg", "images/portfolio/projects/home.jpg"
         ],
-        "url": "https://frozen-chamber-84417.herokuapp.com/",
+        "url": "https://agile-eyrie-11044.herokuapp.com/?id=616906fb5711900016c104d4",
         "technologies": [
           {
             "class": "devicon-mongodb-plain",
@@ -71,7 +71,7 @@
         "images": [
           "images/portfolio/projects/comingsoon.png"
         ],
-        "url": "https://github.com/lukeajcole/React-Business-Site",
+        "url": "https://github.com/lukeajcole/React-Portfolio",
         "technologies": [
           {
             "class": "devicon-mongodb-plain",
@@ -90,6 +90,75 @@
             "name": "Node"
           }
         ]
+      },
+      {
+        "title": "Blog Site",
+        "startDate": "2020",
+        "description": "This is a full stack, ready-to-deploy, blog website. It is complete with a mysql database and a simple front end UI. The user can create an account, view posts, add posts, edit posts, and comment on posts. It is a great starting point to build off of if you want to build your own version of a blog website.",
+        "images": [
+          "images/portfolio/projects/blog.png", "images/portfolio/projects/blog2.png"
+        ],
+        "url": "https://arcane-dawn-89948.herokuapp.com/",
+        "technologies": [
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          },
+          {
+            "class": "devicon-express-original",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node"
+          }
+        ]
+      },
+      {
+        "title": "Budget Tracker",
+        "startDate": "2020",
+        "description": "The Budget Tracker App allows you to track your income and expenses with a simple UI and a easy to understand chart. The app also functions offline and will load any offline transactions into the backend MongoDb when it comes back online.",
+        "images": [
+          "images/portfolio/projects/budget.png"
+        ],
+        "url": "https://frozen-chamber-84417.herokuapp.com/",
+        "technologies": [
+          {
+            "class": "devicon-mongodb-plain",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node"
+          }
+        ]
+      },
+      {
+        "title": "Inspiration Station",
+        "startDate": "2020",
+        "description": "A GitHub-pages web application that can create and curate collections of inspirational and humorous digital content. It was developed by a team of four prospective full-stack developers as part of a coding bootcamp assignment. This application pulls in text and images from various publically-available web APIs. Check it out to get good vibes on demand.",
+        "images": [
+          "images/portfolio/projects/inspiration.png", "images/portfolio/projects/inspiration2.png"
+        ],
+        "url": "https://joeyfitz.github.io/First-Team-Project/",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }, 
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          }, 
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          }
+        ]
       }
     ],
     "experience": [
@@ -97,13 +166,13 @@
         "company": "D&K Engineering",
         "title": "MES Systems Analyst",
         "years": "06.2020 - present",
-        "mainTech": [
-          "Software Implementation"
+        "experienceType": [
+          "work"
         ],
         "technologies": [
           "Team Management",
           "JIRA",
-          "Manufacturing Execution System",
+          "Manufacturing Execution System Implementation",
           "Asset Management",
           "IT/IS System Development"
         ]
@@ -112,31 +181,37 @@
         "company": "UCSD Bootcamp",
         "title": "Full Stack Developer",
         "years": "06.2020 - 11.2020",
-        "mainTech": [
-          "MERN"
+        "experienceType": [
+          "school"
         ],
         "technologies": [
           "REST API",
           "JavaScript",
           "React",
           "noSQL",
+          "Mongoose",
           "SQL",
+          "Sequelize",
           "Express",
           "PWA",
           "REGEX",
-          "MVC"
+          "MVC",
+          "MERN",
+          "NPM",
+          "Apollo Server"
         ]
       },
       {
         "company": "D&K Engineering",
         "title": "Maufacturing Engineer",
         "years": "10.2017 - 06.2020",
-        "mainTech": [
-          "Manufacturing"
+        "experienceType": [
+          "work"
         ],
         "technologies": [
           "Process Development",
           "Quality Management",
+          "Lean 6 Sigma Green Belt",
           "Python",
           "SQL",
           "JavaScript",
@@ -147,16 +222,31 @@
         "company": "D&K Engineering",
         "title": "Electromechanical Technician",
         "years": "02.2016 - 10.2017",
-        "mainTech": [
-          "Manufacturing"
+        "experienceType": [
+          "work"
         ],
         "technologies": [
-          "VBA",
+          "Visual Basic for Excel, Access, Powerpoint, and Word",
           "Troubleshooting",
           "Process improvement",
           "Instruction Authoring",
           "DFM",
           "Failure Mode Analysis"
+        ]
+      },
+      {
+        "company": "Cal Poly San Luis Obispo",
+        "title": "BS, Biomedical Engineering",
+        "years": "2010 - 2015",
+        "experienceType": [
+          "school"
+        ],
+        "technologies": [
+          "Electrical Engineering",
+          "Software Engineering", 
+          "Biomechanics",
+          "Biomaterials", 
+          "Neuroscience"
         ]
       }
     ]

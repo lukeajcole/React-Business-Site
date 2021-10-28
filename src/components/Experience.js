@@ -9,17 +9,9 @@ import Badge from "react-bootstrap/Badge";
 const Experience = (props) => {
     if (props.resumeExperience && props.resumeBasicInfo) {
       var sectionName = props.resumeBasicInfo.section_name.experience;
-      var work = props.resumeExperience.map(function (work, i) {
-        const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
-
-        var mainTech = mainTechnologies.map((technology, i) => {
-          return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
+      var experience = props.resumeExperience.map(function (experience, i) {
+        const technologies = experience.technologies;
+        const experienceType = experience.experienceType  == 'work' ? 'fa-briefcase' : 'fa-graduation-cap' ;
         var tech = technologies.map((technology, i) => {
           return (
             <Badge pill className="experience-badge mr-2 mb-2" key={i}>
@@ -29,31 +21,28 @@ const Experience = (props) => {
         });
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={work.years}
+            className="vertical-timeline-element--experience"
+            date={experience.years}
+            dateClassName={'timelineDate'}
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={<i className={"fas experience-icon " + experienceType }></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-            </div>
-
             <h3
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
-              {work.title}
+              {experience.title}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {work.company}
+              {experience.company}
             </h4>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
@@ -74,7 +63,7 @@ const Experience = (props) => {
         </div>
         <div className="col-md-8 mx-auto">
           <VerticalTimeline>
-            {work}
+            {experience}
             <VerticalTimelineElement
               iconStyle={{
                 background: "#AE944F",

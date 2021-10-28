@@ -30,7 +30,7 @@ const Header = (props) => {
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+      <header id="home" style={{ height: window.innerHeight - 500, display: 'block' }}>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div>
@@ -56,6 +56,7 @@ const Header = (props) => {
                     className="iconify"
                     data-icon="twemoji:owl"
                     data-inline="false"
+
                     style={{
                       display: "block",
                       height: "100%",
